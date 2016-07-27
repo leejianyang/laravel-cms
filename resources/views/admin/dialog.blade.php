@@ -27,51 +27,11 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
-<div class="wrapper">
-    <!-- header -->
-    <header class="main-header">
-        <!-- Logo -->
-        <a href="#" class="logo">
-            <span class="logo-mini"><b>CMS</b></span>
-            <span class="logo-lg"><b>CMS</b></span>
-        </a>
-        <nav class="navbar navbar-static-top">
-            <!-- Sidebar toggle button-->
-            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
 
-            <div class="navbar-custom-menu">
-                <ul class="nav navbar-nav">
-                    <li class="user user-menu open dropdown">
-                        <a href="#">
-                            <span class="hidden-xs">Admin</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Left side column. contains the sidebar -->
-    @include('admin.menu')
-
-    <!-- Content Wraper. -->
-    @yield('content')
-
-
-    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 2.3.3
-        </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-        reserved.
-    </footer>
-
+<div class="dialog-wrapper">
+@yield('content')
 </div>
+
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.0 -->
@@ -84,10 +44,5 @@
 <script src="/js/fastclick/fastclick.js"></script>
 <!-- AdminLTE -->
 <script src="/js/app.js"></script>
-<!-- Layer -->
-<script src="/js/layer/layer.js"></script>
-<!-- 封装的dialog工具函数 -->
-<script src="/js/dialog.js"></script>
-<script src="/js/admin.js"></script>
 </body>
 </html>

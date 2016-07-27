@@ -17,4 +17,6 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function() {
     Route::get('/', 'AdminHomeController@index');
+    Route::get('/category', 'AdminCategoryController@index');
+    Route::match(['get', 'post'], '/category/add', 'AdminCategoryController@add');
 });
